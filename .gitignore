@@ -1,0 +1,7 @@
+.merlin
+/node_modules/
+/lib/*
+!/lib/js/*
+bundle.js
+npm-debug.log
+.DS_Store

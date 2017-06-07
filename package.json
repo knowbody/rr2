@@ -1,0 +1,29 @@
+{
+  "name": "reason-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Reason React App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev:bsb\" \"npm run dev:webpack\"",
+    "dev:bsb": "bsb -make-world -w",
+    "dev:webpack": "webpack -w",
+    "build": "webpack -p",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [],
+  "author": "Mateusz Zatorski",
+  "license": "MIT",
+  "dependencies": {
+    "bs-director": "^0.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "reason-react": "https://github.com/SanderSpies/react-on-reason.git"
+  },
+  "devDependencies": {
+    "bs-platform": "https://github.com/bloomberg/bucklescript.git",
+    "concurrently": "^3.4.0",
+    "webpack": "^2.6.1"
+  }
+}
